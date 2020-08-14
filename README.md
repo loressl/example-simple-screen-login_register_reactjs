@@ -1,3 +1,11 @@
+> Observações: Após realizar o git pull do projeto, digita yarn install dentro da pasta para baixar todas as dependências do projeto.
+
+## Telas
+
+<img src="screens/login.jpg" width="850px" height="450px">
+<img src="screens/dialog_forgot.jpg" width="850px" height="450px">
+<img src="screens/register.jpg" width="850px" height="450px">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
