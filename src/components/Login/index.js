@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import './styles.css';
 import Input from '../Input';
 import Button from '../Button';
-import {Link} from 'react-router-dom';
 import ForgotDialog from '../Dialog';
+import Link from '@material-ui/core/Link';
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -61,6 +61,7 @@ function Login({setIsOpenLogin, setIsOpenRegister}){
           <h1>Login</h1>
           <form onSubmit={handleSubmit} noValidate>
             <Input
+              data-testid="email-form-field"
               error={errors.email}
               placeholder="Email"
               type="email"
@@ -75,12 +76,12 @@ function Login({setIsOpenLogin, setIsOpenRegister}){
               handleChange={handleChange}
             />
             <div className="forgot">
-              <Link onClick={handleOpenDialog}>Forgot Password?</Link>
+              <Link data-testid="link-forgot" onClick={handleOpenDialog} color="initial">Forgot Password?</Link>
               <ForgotDialog openDialog={openDialog} handleCloseDialog={handleCloseDialog}/>
             </div>
             <Button status={status} handleSubmit={handleSubmit} name={"Sign In"}/>
             <div className="signup">
-              <p>Are you new?<Link onClick={callRegister}>Sign Up</Link></p>
+              <p>Are you new?<Link data-testid="link-register" onClick={callRegister} color="initial">Sign Up</Link></p>
             </div>
           </form>
       </div>
