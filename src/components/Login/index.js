@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import './styles.css';
+import './styles.scss';
 import Input from '../Input';
 import Button from '../Button';
 import ForgotDialog from '../Dialog';

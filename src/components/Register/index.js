@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Input from '../Input';
 import Button from '../Button';
 import {Link} from 'react-router-dom';
-import './styles.css';
+import './styles.scss';
 
 const emailRegex = RegExp(
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/

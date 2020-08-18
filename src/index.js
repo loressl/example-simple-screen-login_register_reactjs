@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import * as serviceWorker from './serviceWorker';
+import './styles.scss';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import PageBase from './pages/PageBase/index';
 
@@ -14,4 +13,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-serviceWorker.unregister();

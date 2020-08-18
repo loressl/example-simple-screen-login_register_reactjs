@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
 function Button({status, handleSubmit, name}){
     return(
