@@ -4,7 +4,7 @@ import Input from './index';
 
 describe('<Input/>', ()=>{
     it('Inserção de email', async()=>{
-        const newEmail = 'teste@gmail.com';
+        const newEmail = 'testegmail.com';
         const {container} = render(<Input error="Error" placeholder="Email" type="email" name="email"/>);
         const input = container.querySelector('input');
         fireEvent.change(input,{target:{value: newEmail}});
