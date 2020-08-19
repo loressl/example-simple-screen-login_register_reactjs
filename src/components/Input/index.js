@@ -5,6 +5,7 @@ function Input({error, placeholder, type, name, handleChange}){
     return(
         <div className="input-form">
             <input
+            data-testid="input-form-field"
             className={error.length >0 ? "error" :null}
             placeholder={placeholder} 
             type={type}
