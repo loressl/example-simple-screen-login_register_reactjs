@@ -61,7 +61,6 @@ function Login({setIsOpenLogin, setIsOpenRegister}){
           <h1>Login</h1>
           <form onSubmit={handleSubmit} noValidate>
             <Input
-              data-testid="email-form-field"
               error={errors.email}
               placeholder="Email"
               type="email"
